@@ -1,20 +1,28 @@
-<div class="container main-container">
-  <div class="row">
 
-    <div class="col-md-4"><img [src]="profile.picture" alt="" class="img-fluid"></div>
+<div class="card my-5 mx-auto">
+  <div class="card-body">
+    <div class="row">
 
-    <div class="col-md-8">
-      <ul class="list-group">
-        <li class="list-group-item">{{ profile.name }}</li>
-        <li class="list-group-item">{{ profile.gender }}</li>
-        <li class="list-group-item">{{ profile.updated_at | date:'dd MM yyyy' }}</li>
-      </ul>
+      <div class="col-md-4">
+        <img [src]="profile.picture" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-md-8">
+        <ul class="list-group">
+          <li class="list-group-item">{{ profile.name }}</li>
+          <li class="list-group-item">{{ profile.gender }}</li>
+          <li class="list-group-item">{{ profile.updated_at | date:'dd MM yyyy' }}</li>
+        </ul>
+      </div>
+
     </div>
-
   </div>
 </div>
 
-
-<pre>
-  {{ profile | json }}
-</pre>
+<div class="card my-5 mx-auto">
+  <div class="card-body">
+    <pre>
+      {{ profile | json }}
+    </pre>
+  </div>
+</div>

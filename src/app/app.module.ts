@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProtectedComponent } from './components/protected/protected.component';
-import { PriciesComponent } from './components/pricies/pricies.component';
 
 
 // Servicies
@@ -21,8 +20,7 @@ import { AuthGuardService } from './servicies/auth-guard.service';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ProtectedComponent,
-    PriciesComponent
+    ProtectedComponent
   ],
   imports: [
     BrowserModule,
