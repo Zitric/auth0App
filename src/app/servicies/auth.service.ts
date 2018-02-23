@@ -16,7 +16,7 @@ export class AuthService {
     domain: 'zitric.eu.auth0.com',
     responseType: 'token id_token',
     audience: 'https://zitric.eu.auth0.com/userinfo',
-    redirectUri: 'http://localhost:4200/callback',
+    redirectUri: 'https://zitric.github.io/auth0App/#/callback',
     scope: 'openid profile'
   });
 
